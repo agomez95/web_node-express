@@ -6,7 +6,7 @@ const app = express();
 const path = require('path');
 
 //configuraciones
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 3000); //configuracion de puerto por defecto o puerto 3000
 app.set('views', path.join(__dirname, 'views')) //configuro la carpeta 'views' para mandar mi vista al cliente
 app.set('view engine', 'ejs') //express tiene una integracion con ejs y no necesita ser instanciado como modulo el motor de plantilla
 
